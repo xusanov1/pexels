@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Fetch API</title>
+</head>
+<body>
+    <header>
+        <h1>Fetch API</h1>
+        <form>
+            <select id="search-type">
+                <option value="image">Image</option>
+                <option value="video">Video</option>
+            </select>
+            <input type="text" placeholder="Search" id="search-input">
+            <button type="button" id="search-button">Search</button>
+        </form>
+    </header>
+    <div class="container">
+        <div id="img-grid" class="img-grid">
+            <div id="one" class="grid-el"></div>
+            <div id="two" class="grid-el"></div>
+            <div id="three" class="grid-el"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script/elements.js"></script>
+    <script type="module" src="./script/app.js"></script>
+</body>
+</html>
